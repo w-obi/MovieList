@@ -96,9 +96,14 @@ const MovieDetails = () => {
           </View>
 
           <TouchableOpacity
-            className="flex-row gap-x-2 mt-5 px-4 py-1 rounded-full bg-red"
+            className="flex-row gap-x-2 mt-5 px-4 py-1 rounded-full"
             onPress={toggleSave}
             disabled={saving}
+            style={
+              isSaved
+                ? { backgroundColor: "#008909" }
+                : { backgroundColor: "#2f0000" }
+            }
           >
             <Image source={icons.save} />
             <Text className="text-white ml-2">

@@ -1,16 +1,36 @@
 import MovieCard from "@/components/movieCard";
 import { icons } from "@/constants/icons";
 import { getSavedMovies } from "@/services/appwrite";
-import useFetch from "@/services/useFetch";
-import React from "react";
+import { useFocusEffect } from "expo-router";
+import React, { useCallback, useState } from "react";
 import { ActivityIndicator, FlatList, Image, Text, View } from "react-native";
+import { Models } from "react-native-appwrite";
 
 const saved = () => {
-  const {
-    data: movies,
-    loading: moviesLoading,
-    error: moviesError,
-  } = useFetch(getSavedMovies);
+  const [movies, setMovies] = useState<Models.DefaultDocument[]>([]);
+  const [moviesLoading, setLoading] = useState<boolean>(false);
+  const [moviesError, setError] = useState<Error | null>(null);
+
+  useFocusEffect(
+    useCallback(() => {
+      const fetchMovies = async () => {
+        setLoading(true);
+        try {
+          const result = await getSavedMovies();
+          setMovies(result);
+        } catch (err) {
+          if (err instanceof Error) {
+            setError(err);
+          } else {
+            setError(new Error("An unknown error occurred"));
+          }
+        } finally {
+          setLoading(false);
+        }
+      };
+      fetchMovies();
+    }, [])
+  );
 
   return (
     <View className="bg-black flex-1 px-5">
