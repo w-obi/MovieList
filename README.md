@@ -74,6 +74,8 @@ Make sure that the following tools are already installed:
 - [Git](https://git-scm.com/install/): It is an open source version control system.
 - [Expo Go](https://docs.expo.dev/get-started/set-up-your-environment/): For debugging with physical a device or emulator. Please refer to the link for instructions.
 
+Please also register in Appwrite and TMDB API, because later on you will have to connect them with this project.
+
 ### Get Started
 
 1. Clone the Repository
@@ -94,6 +96,15 @@ Make sure that the following tools are already installed:
    npm install -g expo-cli
    ```
 
+5. Create .env file at the root of the project and assign values for the following fields:
+   ```.env
+   EXPO_PUBLIC_MOVIE_API_KEY=
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+   EXPO_PUBLIC_APPWRITE_ENDPOINT=
+   EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+   EXPO_PUBLIC_APPWRITE_COLLECTION_ID=
+   EXPO_PUBLIC_APPWRITE_COLLECTION_SAVED_ID=
+   ```
 6. Start the app
 
    ```bash
