@@ -5,16 +5,16 @@
 
 ## Table of Contents
 
-- [About](about)
-  + [Description](description)
-  + [Tools](tools)
-  + [Preview](preview)
-- [Setup Project](setup-project)
-  + [Prerequisites](prerequisites)
-  + [Get Started](get-started)
-  + [Get a Fresh Project](get-a-fresh-project)
-  + [Learn More](learn-more)
-  + [Join The Community](join-the-community)
+- [About](#about)
+  + [Description](#description)
+  + [Tools](#tools)
+  + [Preview](#preview)
+- [Setup Project](#setup-project)
+  + [Prerequisites](#prerequisites)
+  + [Get Started](#get-started)
+  + [Get a Fresh Project](#get-a-fresh-project)
+  + [Learn More](#learn-more)
+  + [Join The Community](#join-the-community)
 
 ## About
 
