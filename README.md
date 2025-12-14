@@ -9,6 +9,7 @@
   + [Description](#description)
   + [Tools](#tools)
   + [Preview](#preview)
+  + [Repository structure](#repository-structure)
 - [Setup Project](#setup-project)
   + [Prerequisites](#prerequisites)
   + [Get Started](#get-started)
@@ -24,34 +25,46 @@
 MovieList is an android app designed to show the trending movies. There are several features including: viewing popular/recently searched movies("Home" tab), searching for a specific movie("Search" tab), saving movies in which user was interested("Saved") and viewing the movie details("Details" page). The purpose of writing this project was to learn the basics of react-native by using expo. ***You can download the APK file [here](https://portfolio-yeradil.vercel.app/)***.
 
 ### Tools
-1. React Native: an open-source framework used for building native-style, cross-platform applications for iOS and Android using JavaScript.
-2. Expo: a framework that makes developing Android and iOS apps easier. It is highly recommended for beginners to start.
-3. TailwindCSS: a utility-first CSS framework designed to enable developers to create applications faster and more efficiently with smaller css files.
-4. TMDB API: This API service allows using movie, TV show or actor images and/or data in the application.
-5. Appwrite: an open-source, cloud development platform with built-in backend infrastructure and web hosting, all from a single place.
+1. [React Native](https://reactnative.dev/docs/environment-setup): an open-source framework used for building native-style, cross-platform applications for iOS and Android using JavaScript.
+2. [Expo](https://docs.expo.dev/): a framework that makes developing Android and iOS apps easier. It is highly recommended for beginners to start.
+3. [TailwindCSS](https://v2.tailwindcss.com/docs/guides/create-react-app): a utility-first CSS framework designed to enable developers to create applications faster and more efficiently with smaller css files.
+4. [TMDB API](https://developer.themoviedb.org/v4/reference/getting-started): This API service allows using movie, TV show or actor images and/or data in the application.
+5. [Appwrite](https://appwrite.io/docs): an open-source, cloud development platform with built-in backend infrastructure and web hosting, all from a single place.
 
 
 ### Preview
 ---
-*"Home" tab*
+*"Home" tab*, /app/(tabs)/index.tsx
 
-![*"Home"* tab of the app](/assets/images/MovieListHome.jpg)
-
----
-*"Search" tab*
-
-![*"Search"* tab of the app](/assets/images/MovieListSearch.jpg)
+![*"Home"* tab of the app, MovieListHome.jpg](/assets/images/MovieListHome.jpg)
 
 ---
-*"Saved" tab*
+*"Search" tab*, /app/(tabs)/search.tsx
 
-![*"Saved"* tab of the app](/assets/images/MovieListSaved.jpg)
+![*"Search"* tab of the app, MovieListSearch.jpg](/assets/images/MovieListSearch.jpg)
 
 ---
-*"Details" page*
+*"Saved" tab*, /app/(tabs)/saved.tsx
 
-![*"Details"* tab of the app](/assets/images/MovieListDetails.jpg)
+![*"Saved"* tab of the app, MovieListSaved.jpg](/assets/images/MovieListSaved.jpg)
 
+---
+*"Details" page*, /app/movies/[id].tsx
+
+![*"Details"* tab of the app, MovieListDetails.jpg](/assets/images/MovieListDetails.jpg)
+
+### Repository Structure
+
+1. android: the folder generated after creating APK file
+2. app: the folder containing the main logic of this project
+   - (tabs): contains main pages used in the project
+   - movies: [id].tsx used as a template for different movie details
+3. assets: the folder containing resources used in the project including images, icons and fonts
+4. components: contains reusable components potentially used in multiple files
+5. constants: used for code cleanliness
+6. interfaces: stores all interfaces used in this project
+7. services: contains hooks, functions used for fetching data
+8. types: used for importing different types of files
 
 ## Setup Project
 
