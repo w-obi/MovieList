@@ -21,7 +21,7 @@
 ### Description
 
 **This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).**
-MovieList is an android app designed to show the trending movies. There are several features including: viewing popular/recently searched movies("Home" tab), searching for a specific movie("Search" tab), saving movies in which user was interested("Saved") and viewing the movie details("Details" page). The purpose of writing this project was to learn the basics of react-native by using expo.
+MovieList is an android app designed to show the trending movies. There are several features including: viewing popular/recently searched movies("Home" tab), searching for a specific movie("Search" tab), saving movies in which user was interested("Saved") and viewing the movie details("Details" page). The purpose of writing this project was to learn the basics of react-native by using expo. ***You can download the APK file [here](https://portfolio-yeradil.vercel.app/)***.
 
 ### Tools
 1. React Native: an open-source framework used for building native-style, cross-platform applications for iOS and Android using JavaScript.
